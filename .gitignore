@@ -1,0 +1,17 @@
+### Idea ###
+*.iml
+*.ipr
+*.iws
+.idea
+out
+
+### CMake ###
+cmake-build-debug/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
