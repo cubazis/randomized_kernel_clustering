@@ -73,8 +73,8 @@ def efficient(X, r=2, l=5, d=2):
 def exact(X, samples=10, r=2, d=2):
     K_origin = (X.dot(X.T)) ** d
     U, S, _ = np.linalg.svd(K_origin)
-    U = U[:,:2]
-    S = S[:2]
+    U = U[:,:r]
+    S = S[:r]
     X_out = U * (np.sqrt(S))
     K = X_out.dot(X_out.T)
     return K, X_out
